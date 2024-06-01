@@ -125,3 +125,91 @@
 // let arr = [1,2,3]
 // let newarr = [...arr,4,5]
 // console.log(newarr);
+
+
+// Q-8:- Function Statement, Function Expression, Anonymous Function, Fat Arrow Function with implicit return
+
+// Function Statement
+// A Standerd function declaration
+// function abc(name){
+//     console.log(name);
+// }
+// abc("Ram")
+
+// Function Expression
+// A function assigned to a varible
+//  let abc = function(name){
+//     console.log(name);
+//  }
+//  abc("Ram")
+
+// Anonymous function
+// A function without a name, often used as a callback
+// setTimeout(function(){
+//     console.log("Ram");
+// },2000)
+
+// Fat Arrow function
+// A concise function syntax with an implicit return if there no block body.
+// let abc=(a,b)=>{
+//     console.log(a+b);
+// }
+// abc(2,6)
+
+// Q-9:- this and new keywords in javaScript
+
+// this keywords
+// refer to the context in which a function is called
+// const obj = {
+//     value:20,
+//     getValue:function(){
+//         return this.value
+//     }
+// }
+// console.log(obj.getValue())
+
+// new keywords
+// used to create an instance of an object from a constructor function.
+// function Person(name){
+//     this.name=name;
+// }
+// let person = new Person("Sonu")
+// console.log(person.name)
+
+// Q-10:- Whays to clone, copy and merge two object in js
+// Clone an object
+// let obj1 = {a:1,b:2};
+// let clone = {...obj1}
+// console.log(clone);
+
+// // Copy an object
+
+// let obj2 = {c:3};
+// let copy = Object.assign({},obj1,obj2)
+// console.log(copy);
+
+// // Merge two object
+// let merge={...obj1,...obj2}
+// console.log(merge);
+
+// Q-11:- Function constructor and class constructor in js
+// function constructor
+// function Car(make,model){
+//     this.make=make;
+//     this.model=model
+// }
+// let myCar = new Car("Toyota","Corolla");
+// console.log(myCar.make)
+
+// Class constructor
+// class myCalss{
+//     constructor(make, model){
+//         this.make=make;
+//         this.model=model;
+//     }
+// }
+
+// let myCar = new myCalss("Toyota","Corolla");
+// console.log(myCar.make);
+
+
